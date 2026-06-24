@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Ali Haider - BSCS Student and AI/ML Enthusiast. Interactive 3D particle canvas background, glassmorphism UI elements, and sleek modern design.">
+    <title>Ali Haider | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Canvas -->
+    <canvas id="canvas-bg"></canvas>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-dot"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="#hero" class="logo" id="nav-logo">
+                <span class="gradient-text">&lt;ALI.H /&gt;</span>
+            </a>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="hamburger"></span>
+            </button>
+            <ul id="primary-navigation" class="nav-menu" data-visible="false">
+                <li><a href="#hero" class="nav-link active" id="link-hero">Home</a></li>
+                <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+                <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" id="link-experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <p class="hero-subtitle">HELLO WORLD, I'M</p>
+                <h1 class="hero-title">Ali Haider</h1>
+                <h2 class="hero-role">
+                    I am <span id="typing-text" class="gradient-text"></span><span class="typed-cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    A BSCS 6th-semester student with a strong passion for AI/ML and full-stack web development. Familiar
+                    with C++, Python, JavaScript, HTML, and CSS, combining algorithmic thinking with clean code.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary" id="hero-btn-projects">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag font-outfit">01 / ABOUT ME</span>
+                    <h2 class="section-title">My Journey</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card glass-panel">
+                        <div class="card-glow"></div>
+                        <h3 class="about-card-title">Who I Am</h3>
+                        <p class="about-text">
+                            I am a 6th-semester Bachelor of Science in Computer Science (BSCS) student. My core
+                            interests lie in Artificial Intelligence, Machine Learning, and creating intelligent,
+                            data-driven applications.
+                        </p>
+                        <p class="about-text">
+                            In addition to AI, I have hands-on experience building web clones, database management
+                            systems, and cloud-based architecture. I am always eager to learn new technologies and take
+                            on challenging projects.
+                        </p>
+                    </div>
+                    <div class="about-stats-grid">
+                        <div class="stat-card glass-panel">
+                            <span class="stat-number gradient-text">6th</span>
+                            <span class="stat-label">Semester BSCS</span>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <span class="stat-number gradient-text">10+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <span class="stat-number gradient-text">5</span>
+                            <span class="stat-label">Core Languages</span>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <span class="stat-number gradient-text">AI</span>
+                            <span class="stat-label">Main Focus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag font-outfit">02 / EXPERTISE</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skills-category glass-panel">
+                        <div class="card-glow"></div>
+                        <h3 class="category-title"><span class="icon">🧠</span> Core Languages</h3>
+                        <ul class="skills-list">
+                            <li><span>C++</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%"></div>
+                                </div>
+                            </li>
+                            <li><span>Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </li>
+                            <li><span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 80%"></div>
+                                </div>
+                            </li>
+                            <li><span>HTML & CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 95%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-category glass-panel">
+                        <div class="card-glow"></div>
+                        <h3 class="category-title"><span class="icon">🤖</span> AI & Machine Learning</h3>
+                        <ul class="skills-list">
+                            <li><span>Data Analysis</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </li>
+                            <li><span>Predictive Modeling</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 80%"></div>
+                                </div>
+                            </li>
+                            <li><span>Scikit-Learn / Pandas</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 78%"></div>
+                                </div>
+                            </li>
+                            <li><span>Jupyter Notebooks</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 88%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-category glass-panel">
+                        <div class="card-glow"></div>
+                        <h3 class="category-title"><span class="icon">☁️</span> Systems & Cloud</h3>
+                        <ul class="skills-list">
+                            <li><span>Database Management (SQL)</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </li>
+                            <li><span>Web Architecture</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 80%"></div>
+                                </div>
+                            </li>
+                            <li><span>Cloud Fundamentals</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 75%"></div>
+                                </div>
+                            </li>
+                            <li><span>Git & Version Control</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag font-outfit">03 / SHOWCASE</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai" id="filter-ai">AI / ML</button>
+                    <button class="filter-btn" data-filter="web" id="filter-web">Web</button>
+                    <button class="filter-btn" data-filter="systems" id="filter-systems">Systems & Cloud</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel" data-category="ai">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project1.png" alt="Disease Prediction AI" class="project-img"
+                                loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Code" id="p1-code">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="svg-icon">
+                                            <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link-icon" aria-label="Live Demo" id="p1-demo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="svg-icon">
+                                            <path
+                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">AI / Machine Learning</span>
+                            <h3 class="project-card-title">Diabetes & Disease Prediction</h3>
+                            <p class="project-desc">A machine learning pipeline built with Python that analyzes patient
+                                data to predict the onset of diabetes and other common diseases with high accuracy.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Scikit-Learn</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel" data-category="web">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project2.png" alt="Marham Web Clone" class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Code" id="p2-code">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="svg-icon">
+                                            <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link-icon" aria-label="Live Demo" id="p2-demo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="svg-icon">
+                                            <path
+                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">Web Development</span>
+                            <h3 class="project-card-title">Marham Web Clone</h3>
+                            <p class="project-desc">A fully responsive clone of the Marham healthcare platform,
+                                featuring complex layouts, interactive UI components, and modern web aesthetics.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel" data-category="systems">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project3.png" alt="Cloud & DBMS Projects" class="project-img"
+                                loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Code" id="p3-code">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="svg-icon">
+                                            <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link-icon" aria-label="Live Demo" id="p3-demo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="svg-icon">
+                                            <path
+                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">Systems & Cloud</span>
+                            <h3 class="project-card-title">Airport & File Security Systems</h3>
+                            <p class="project-desc">Engineered a robust Airport DBMS for managing flights and
+                                passengers, alongside a Cloud File Security System ensuring secure data storage and
+                                encrypted transfers.</p>
+                            <div class="project-tags">
+                                <span>C++</span>
+                                <span>SQL</span>
+                                <span>Cloud Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag font-outfit">04 / HISTORY</span>
+                    <h2 class="section-title">Education & Milestones</h2>
+                </div>
+                <div class="timeline">
+                    <!-- Line -->
+                    <div class="timeline-line"></div>
+
+                    <!-- Item 1 -->
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date font-outfit">Current</div>
+                        <h3 class="job-title">BSCS 6th Semester</h3>
+                        <h4 class="job-company">Computer Science</h4>
+                        <p class="job-desc">
+                            Currently deep diving into advanced computer science topics, including Artificial
+                            Intelligence, Machine Learning, and Cloud Computing. Building practical projects to solve
+                            real-world problems.
+                        </p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date font-outfit">Recent</div>
+                        <h3 class="job-title">AI & Systems Projects</h3>
+                        <h4 class="job-company">Academic Pursuits</h4>
+                        <p class="job-desc">
+                            Developed predictive models for healthcare (Diabetes and Disease Prediction), built a robust
+                            Airport DBMS, and explored secure file systems in the cloud.
+                        </p>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date font-outfit">Foundation</div>
+                        <h3 class="job-title">Core Web & Programming</h3>
+                        <h4 class="job-company">Early Journey</h4>
+                        <p class="job-desc">
+                            Mastered foundational languages like C++ and Python, while simultaneously developing
+                            responsive web interfaces using HTML, CSS, and JavaScript. Built complex clones like the
+                            Marham web portal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag font-outfit">05 / TALK TO ME</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info glass-panel">
+                        <div class="card-glow"></div>
+                        <h3>Let's start something new.</h3>
+                        <p>Have an exciting project idea, a role to fill, or just want to chat about AI and development?
+                            Shoot me a message and let's connect!</p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <span class="detail-icon">✉️</span>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:ali.haider@example.com"
+                                        class="detail-link">alidhillon1247@gmail.com</a>
+
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p class="detail-link">lahore,punjab,pakistan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass-panel">
+                        <div class="card-glow"></div>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Name</label>
+                                <input type="text" id="form-name" name="name" class="form-input" placeholder="Your name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email</label>
+                                <input type="email" id="form-email" name="email" class="form-input"
+                                    placeholder="Your email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Message</label>
+                                <textarea id="form-message" name="message" rows="5" class="form-input"
+                                    placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                                <span>Send Message</span>
+                                <span class="spinner hidden" id="submit-spinner"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copyright">&copy; 2026 Ali Haider. Built with passion &amp; pure code.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/alidhillon1247/AI-ML-PROJECTS.git" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub" class="social-link" id="footer-github">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/ali-haider-391ab7373/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn" class="social-link" id="footer-linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+                    class="social-link" id="footer-twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+                        <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
